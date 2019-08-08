@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+
+<!-- fenetre principale -->
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+	fx:id="toDoListWindow" styleClass="toDoListWindow" prefWidth="1100"
+	prefHeight="700"  fx:controller="com.demo.controller.MainController">
+	
+	<!-- conteneur principal -->
+	<VBox fx:id="toDoListMainBox" styleClass="toDoListMainBox"  minHeight="500" AnchorPane.leftAnchor="50.0" 
+		AnchorPane.rightAnchor="50.0">
+		
+		<!-- espace titre de l application -->
+		<Label fx:id="toDoListTitle" styleClass="toDoListTitle" text="To Do List" alignment="CENTER"/>
+		
+		<!-- conteneur de la liste de taches -->
+		<VBox fx:id="taskListBox" styleClass="taskListBox" minHeight="350" spacing="10" >
+		</VBox>
+		
+		<!-- conteneur bas de page (widget-horloge) -->
+		<HBox fx:id="clockBox" styleClass="clockBox" minHeight="80" alignment="CENTER"></HBox>
+		
+		<!-- espace de la signature du createur de l application -->
+		<Label fx:id="toDoListSignature" styleClass="toDoListSignature" 
+			text="&#174; Gabriel Cyr, C&#233;gep Andr&#233;-Laurendeau Printemps 2018" alignment="CENTER"/>
+	</VBox>
+</AnchorPane>

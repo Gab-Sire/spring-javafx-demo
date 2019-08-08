@@ -1,0 +1,65 @@
+
+/* Fichier CSS par Gabriel Cyr pour SpringJavaFXDemo*/
+
+
+/* text */
+
+.toDoListSignature{
+	-fx-padding: 20.0 0.0 10.0 0.0;
+}
+
+.toDoListTitle{
+	-fx-padding: 30.0 0.0 20.0 0.0;
+	-fx-font-size: 60.0px;
+	-fx-font-weight: bold;
+}
+
+/* areas */
+
+.toDoListWindow{
+	-fx-background-color: linear-gradient(white, lightblue);
+	-fx-font-size: 19.0px;
+}
+
+.taskListBox{
+	-fx-padding: 30.0 10.0 10.0 40.0;
+	-fx-background-color: #f2f2f2, #f2f2f2;
+    -fx-background-insets: 1, 5;
+    -fx-border-color: lightblue, lightblue; 
+    -fx-border-insets: 0, 5;
+    -fx-border-radius: 5.0 5.0 5.0 5.0;
+    -fx-background-radius: 5.0 5.0 5.0 5.0;
+    -fx-border-width: 4.0px;
+}
+
+/* buttons */
+
+.buttons{
+	-fx-padding: 0.4em 0.4em;
+    -fx-font-size: 14.0px;
+    -jfx-button-type: RAISED;
+    -fx-background-color: rgb(77.0,102.0,204.0);
+    -fx-pref-width: 60.0;
+    -fx-text-fill: WHITE;
+}
+
+.deleteIcon{
+	-fx-color: red;
+}
+
+.icons{
+    -glyph-size: 30.0;
+}
+
+/* widgets */
+
+.clockBox{
+	-fx-padding: 20.0 20.0 20.0 20.0;
+	/*-fx-border-color: yellow;
+	-fx-border-width: 4.0px;
+	-fx-border-style: solid;*/
+}
+
+
+
+
