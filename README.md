@@ -18,7 +18,7 @@ Les instructions suivantes servent à déployer l'application démo To Do List e
 Cloner le dépôt ci-présent :
 
 ``` 
-git clone https://github.com/cyrgabriel/SpringJavaFxDemo.git
+git clone https://github.com/GabSire-087/Spring-JavaFX-Demo.git
 ```
 
 Ajouter le projet au workspace courant du Spring Tool Suite.
