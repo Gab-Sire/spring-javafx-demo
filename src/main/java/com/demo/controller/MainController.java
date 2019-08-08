@@ -11,10 +11,6 @@ import com.demo.graphics.TaskList;
 import com.demo.service.TaskService;
 import com.utils.Utils;
 
-import eu.hansolo.medusa.FGauge;
-import eu.hansolo.medusa.FGaugeBuilder;
-import eu.hansolo.medusa.GaugeDesign;
-import eu.hansolo.medusa.GaugeDesign.GaugeBackground;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -24,6 +20,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
 @Component
+@SuppressWarnings("restriction")
 public class MainController {
 
 	@FXML
@@ -50,8 +47,6 @@ public class MainController {
 	@Autowired
 	private TaskList taskList;
 
-	private List<Task> tasks = new ArrayList<>();
-
 	public void initialize() {
 		
 		Utils.bindRegionsWidthProperties(toDoListTitle, taskListBox);
@@ -62,17 +57,6 @@ public class MainController {
 		
 		taskList.initialize(tasks, taskListBox);
 		taskList.draw();
-		Utils.drawClock(clockBox);
-		
-		FGauge fGauge = FGaugeBuilder  
-			     .create()  
-			     .prefSize(500, 500)    
-			     .gaugeDesign(GaugeDesign.METAL)  
-			     .gaugeBackground(GaugeBackground.CARBON)  
-			     .foregroundVisible(true)  
-			     .build();  
-		
-		clockBox.getChildren().add(fGauge);
 	}
 
 
